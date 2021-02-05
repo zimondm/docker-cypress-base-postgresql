@@ -1,4 +1,4 @@
-FROM node:10.12
+FROM node:fermium
 COPY pgdq.list /etc/apt/sources.list.d/pgdg.list
 # Debian Jessie mirrors were removed
 RUN echo "deb http://archive.debian.org/debian jessie-backports main" > /etc/apt/sources.list.d/jessie-backports.list
